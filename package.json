@@ -1,6 +1,6 @@
 {
-  "name": "@nrd/fua.resource.ontology.tm-forum",
-  "version": "1.0.0",
+  "name": "@fua/resource.ontology.tm-forum",
+  "version": "0.0.0-dev",
   "description": "",
   "exports": {
     ".": {
@@ -12,23 +12,28 @@
     "data/*"
   ],
   "devDependencies": {
-    "mocha": "^10.2.0",
-    "expect": "^26.6.2",
-    "@nrd/fua.core.assert": "^1.0.0",
-    "@nrd/fua.core.async": "^1.0.0",
-    "@nrd/fua.core.tty": "^1.0.0",
-    "@nrd/fua.core.objects": "^1.0.0",
-    "@nrd/fua.module.rdf": "^1.0.0",
-    "@nrd/fua.module.persistence": "^1.0.0",
-    "@nrd/fua.module.subprocess": "^1.0.0"
+    "expect": "26.x",
+    "mocha": "10.x",
+    "@fua/core.assert": "^1.0.0",
+    "@fua/core.async": "^1.0.0",
+    "@fua/core.tty": "^1.0.0",
+    "@fua/core.objects": "^1.0.0",
+    "@fua/module.rdf": "^1.0.0",
+    "@fua/module.persistence": "^1.0.0",
+    "@fua/module.subprocess": "^1.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
+  },
+  "mocha": {
+    "bail": false,
+    "recursive": false,
+    "spec": "test/*.test.js"
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@git02.int.nsc.ag:10022/research/fua/resource/ontology/tm-forum.git"
+    "url": "ssh://git@github.com:nicosResearchAndDevelopment/fua.resource.ontology.tm-forum.git"
   },
-  "author": "spetrac@nicos-ag.com",
-  "license": "UNLICENSED"
+  "author": "Simon Petrac <pfoerdie@gmail.com>",
+  "license": "MIT"
 }

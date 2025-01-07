@@ -1,8 +1,8 @@
 const
-    assert  = require('@nrd/fua.core.assert'),
-    async   = require('@nrd/fua.core.async'),
-    tty     = require('@nrd/fua.core.tty'),
-    objects = require('@nrd/fua.core.objects'),
+    assert  = require('@fua/core.assert'),
+    async   = require('@fua/core.async'),
+    tty     = require('@fua/core.tty'),
+    objects = require('@fua/core.objects'),
     path    = require('path'),
     fs      = require('fs/promises'),
     crypto  = require('crypto'),

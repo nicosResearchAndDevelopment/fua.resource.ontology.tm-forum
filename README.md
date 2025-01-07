@@ -1,1 +1,1 @@
-# @nrd/fua.resource.ontology.tm-forum
+# @fua/resource.ontology.tm-forum
